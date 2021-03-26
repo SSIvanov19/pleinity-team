@@ -53,6 +53,28 @@ def main():
     # Show the model linear regression prediction
     linear_prediction = linear_regression.predict(future_set)
 
+    # Visualize the data
+    predictions = tree_prediction
+    valid = data_store[X.shape[0]:]
+    valid['prediction'] = predictions
+
+    plt.figure(figsize=(16,8))
+    plt.title('Tree Prediction Model')
+    plt.xlabel('Days')
+    plt.ylabel('Storage Level')
+    plt.plot(valid[['prediction']])
+    plt.savefig('../Data Visualisation/decision_tree_prediction.png')
+
+    predictions = linear_prediction
+    valid = data_store[X.shape[0]:]
+    valid['prediction'] = predictions
+
+    plt.figure(figsize=(16, 8))
+    plt.title('Linear Regression Model')
+    plt.xlabel('Days')
+    plt.ylabel('Storage Level')
+    plt.plot(valid[['prediction']])
+    plt.savefig('../Data Visualisation/linear_regression_prediction.png')
 
 
 
