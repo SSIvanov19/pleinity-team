@@ -14,7 +14,6 @@ public class AnimationController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Space was pressed!");
             if (isDamRaise)
             {
                 damAnimator.SetTrigger("Low");
