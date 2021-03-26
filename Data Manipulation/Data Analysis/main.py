@@ -13,7 +13,14 @@ def main():
     data_store = pd.read_csv('../../Data/tcc-water-dam-levels.csv', usecols=col_list)
     print(data_store)
 
-   
+    # Visualize the Storage Rate
+    plt.figure(figsize=(16, 8))
+    plt.title('Storage/day')
+    plt.xlabel('Days')
+    plt.ylabel('Storage Level')
+    plt.show()
+
+
 
 
 
