@@ -10,6 +10,10 @@
    <img src = "https://img.shields.io/github/last-commit/SSIvanov19/pleinity-team?style=for-the-badge">
    <img src = "https://img.shields.io/github/languages/top/SSIvanov19/pleinity-team?style=for-the-badge">
   </p>
-   <p> <strong>                                                                                                      
+   <p>
+   <hr> 
+   <strong>                                                                                                      
   Note : This repository uses GitLFS, to use this repo you need to pull via Git and make sure GitLFS is installed locally
   </strong>
+  <hr>
+  <p >
