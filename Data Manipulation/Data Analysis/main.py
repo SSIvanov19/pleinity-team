@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 
 
 def main():
+    pd.options.mode.chained_assignment = None  # default='warn'
     plt.style.use('bmh')
     # Store the data
     col_list = ["average_water_level"]
     data_store = pd.read_csv('../../Data/tcc-water-dam-levels.csv', usecols=col_list)
-    print(data_store)
 
     # Visualize the Storage Rate
     plt.figure(figsize=(16, 8))
@@ -20,16 +20,14 @@ def main():
     plt.ylabel('Storage Level')
     plt.plot(data_store['average_water_level'])
     plt.savefig('../Data Visualisation/foo.png')
-    plt.show()
 
     # Create a variable to predict
-    future_days = 365
+    future_days = int(input())
     # Create a new column
     data_store['prediction'] = data_store[['average_water_level']].shift(-future_days)
 
-    # Create the feature date set and convert it to a numpy array, and remove last rows
-    X = np.array(data_store.drop('prediction', axis=1), dtype=str)[:-future_days]
-    # print(X)
+    # Create the future date set and convert it to a numpy array, and remove last rows
+    X = np.array(data_store.drop('prediction', axis=1), dtype=float)[:-future_days]
 
     # Create the target data set and convert it to numpy array and give it all target values except the last rows
     Y = np.array(data_store['prediction'])[:-future_days]
@@ -37,6 +35,7 @@ def main():
     # Split data into training and testing
     x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.25)
 
+    
 
 
 
