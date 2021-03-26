@@ -77,6 +77,5 @@ def main():
     plt.savefig('../Data Visualisation/linear_regression_prediction.png')
 
 
-
 if __name__ == "__main__":
     main()
