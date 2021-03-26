@@ -22,7 +22,18 @@ def main():
     plt.savefig('../Data Visualisation/foo.png')
     plt.show()
 
+    # Create a variable to predict
+    future_days = 365
+    # Create a new column
+    data_store['prediction'] = data_store[['average_water_level']].shift(-future_days)
 
+    # Create the feature date set and convert it to a numpy array, and remove last rows
+    X = np.array(data_store.drop('prediction', axis=1), dtype=str)[:-future_days]
+    # print(X)
+
+    # Create the target data set and convert it to numpy array and give it all target values except the last rows
+    y = np.array(data_store['prediction'])[:-future_days]
+    print(y)
 
 
 
