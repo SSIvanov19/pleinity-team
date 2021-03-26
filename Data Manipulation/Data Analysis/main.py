@@ -19,7 +19,7 @@ def main():
     plt.xlabel('Days')
     plt.ylabel('Storage Level')
     plt.plot(data_store['average_water_level'])
-    plt.savefig('../Data Visualisation/foo.png')
+    plt.savefig('../Data Visualisation/basic_model.png')
 
     # Create a variable to predict
     future_days = int(input())
@@ -35,7 +35,24 @@ def main():
     # Split data into training and testing
     x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.25)
 
-    
+    # Create the models
+    # Create the decision tree regressor model
+    decision_tree = DecisionTreeRegressor().fit(x_train, y_train)
+
+    # Create the linear regression model
+    linear_regression = LinearRegression().fit(x_train, y_train)
+
+    # Get the last rows of the future data set
+    future_set = data_store.drop(['prediction'], 1)[:-future_days]
+    future_set = future_set.tail(future_days)
+    future_set = np.array(future_set)
+
+    # Show the model tree prediction
+    tree_prediction = decision_tree.predict(future_set)
+
+    # Show the model linear regression prediction
+    linear_prediction = linear_regression.predict(future_set)
+
 
 
 
