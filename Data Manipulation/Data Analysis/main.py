@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 def main():
     plt.style.use('bmh')
     # Store the data
-    col_list = [ "average_water_level"]
+    col_list = ["average_water_level"]
     data_store = pd.read_csv('../../Data/tcc-water-dam-levels.csv', usecols=col_list)
     print(data_store)
 
@@ -32,8 +32,11 @@ def main():
     # print(X)
 
     # Create the target data set and convert it to numpy array and give it all target values except the last rows
-    y = np.array(data_store['prediction'])[:-future_days]
-    print(y)
+    Y = np.array(data_store['prediction'])[:-future_days]
+
+    # Split data into training and testing
+    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.25)
+
 
 
 
