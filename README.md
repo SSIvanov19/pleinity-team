@@ -10,10 +10,16 @@
    <img src = "https://img.shields.io/github/last-commit/SSIvanov19/pleinity-team?style=for-the-badge">
    <img src = "https://img.shields.io/github/languages/top/SSIvanov19/pleinity-team?style=for-the-badge">
   </p>
-   <p>
-   <hr> 
+
+   <hr>
+   <p align = "center">
    <strong>                                                                                                      
-  Note : This repository uses GitLFS, to use this repo you need to pull via Git and make sure GitLFS is installed locally
-  </strong>
-  <hr>
-  <p >
+  Note : This repository uses GitLFS, to use this repo you need to pull via Git and make sure GitLFS is installed locally!
+  </strong>  </p >
+  <hr><br>
+  <p align = "center" style:"font-size:4em">
+  <strong><big>
+   The innovative solution for every water source in the world. 💧
+  </strong><big>
+  </p><br><hr>
+  <h1> About  </h1>
