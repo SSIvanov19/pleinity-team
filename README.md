@@ -22,4 +22,9 @@
    The innovative solution for every water source in the world. 💧
   </strong><big>
   </p><br><hr>
-  <h1> About  </h1>
+  <h1>💻 About  </h1>
+  <p>
+    Introducing our solution to the world - using AI to manage water in water sources used for providing water to cities and villages. 
+  </p>
+  <h1>🎥 Demo of our project </h1>
+  <img src  = "gifs/Dam.gif>
