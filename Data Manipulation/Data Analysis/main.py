@@ -18,6 +18,8 @@ def main():
     plt.title('Storage/day')
     plt.xlabel('Days')
     plt.ylabel('Storage Level')
+    plt.plot(data_store['average_water_level'])
+    plt.savefig('../Data Visualisation/foo.png')
     plt.show()
 
 
