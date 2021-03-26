@@ -16,13 +16,10 @@
    <strong>                                                                                                      
   Note : This repository uses GitLFS, to use this repo you need to pull via Git and make sure GitLFS is installed locally!
   </strong>  </p >
-  <hr>
-  <p style="float:left">
-  <img src = "images/py-logo.png" alt = "python-logo" width = 155px height = 155px>
-  </p>
-  <p align = "right" style:"font-size:4em">
+  <hr><br>
+  <p align = "center" style:"font-size:4em">
   <strong><big>
    The innovative solution for every water source in the world. 💧
   </strong><big>
-  </p><hr>
+  </p><br><hr>
   <h1> About  </h1>
