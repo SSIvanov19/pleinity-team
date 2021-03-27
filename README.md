@@ -23,7 +23,7 @@
   </strong><big>
   </p><br><hr>
   <h1>💻 About  </h1>
-  <p>
+  <p align = "center">
     Introducing our solution to the world - using AI to manage water in water sources used for providing water to cities and villages. 
   </p>
   <h1>🎥 Demo of our project </h1>
@@ -55,3 +55,51 @@
    <li> <img src = "https://media.discordapp.net/attachments/824909370768621578/825089525922398208/unknown.png?width=1394&height=676"> </li>
    </ul>
   </ol>
+  <h1>🖱️ Usage </h1>
+  <p>To use the bot, you need to have Python 3 and Pip installed. After that you can install the modules we have used by typing this in your terminal :
+  </p>
+   <pre>
+   pip install -r requirements.txt
+   </pre>
+   <p>
+    Or if you are on Linux :
+   </p>
+   <pre>
+   pip3 install -r requirements.txt
+   </pre>
+   <p> After that, just start the bot either by click on it in File Explorer or by typing this in your terminal : </p>
+   <pre>
+   cd Data Manipulation/
+   cd Data Analysis
+   python main.py
+   </pre>
+   <p>Or if you are on Linux :  </p>
+   <pre>
+   cd Data Manipulation/
+   cd Data Analysis
+   python3 main.py
+   </pre>
+   <h1> Installing </h1>
+   <p> To install our project on your machine you just need to clone it. This can be done by : </p>
+   <pre>
+    git clone https://github.com/SSIvanov19/pleinity-team.git
+    cd pleinity-team
+   </pre>
+   <h1> ⛏️ Built using : </h1>
+   <p><img src="https://emoji.gg/assets/emoji/py.png" width="18px" height="18px" alt="py">
+    Pandas, Numpy and Scikit Learn - Python Modules used for Data Science. </p>
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Matplotlib_icon.svg/1024px-Matplotlib_icon.svg.png" width="18px" height="18px" alt="py">
+    MatPlotLib - Python Module for Visualising Data.  </p>
+    <p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/512px-Blender_logo_no_text.svg.png" width="18px" height="16px" alt="py">
+    Blender - Application used for making 3D models.
+    </p>
+    <h1>🧒 Our Team</h1>
+    <p>Stoyan Ivanov - <a href = "https://github.com/SSIvanov19"> SSIvanov19</a> - Team Leader </p>
+    <p>Atanas Pozharliev - <a href = "https://github.com/ABPozharliev19"> ABPozharliev19</a> - Deep Learning Designer </p>
+    <p>Stas Uzunov - <a href = "https://github.com/SSUzunov19"> SSUzunov19</a> - Data Analyzer </p>
+    <p>Boris Savov - <a href = "https://github.com/BNSavov19"> BNSavov19</a> - Application Designer </p>
+
+     
+    
+    
