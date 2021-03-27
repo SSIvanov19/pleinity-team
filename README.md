@@ -28,6 +28,9 @@
   </p>
   <h1>🎥 Demo of our project </h1>
   <img src  = "gifs/Dam.gif">
+  <hr>
+  <p></p><li><a src = "https://codingburgas-my.sharepoint.com/:w:/g/personal/ssivanov19_codingburgas_bg/EUwqhGbKZZBKoAwX2jj1vBEBa11LNX6E_trJmmju71G8QA?e=Q79vaB">Our Documentation</a></li>
+  <hr>
   <h1>⌨️ How it works</h1>
   <p><big>Our work can be split on 3 main things :</p></big>
   <ol>
